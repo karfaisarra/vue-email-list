@@ -10,7 +10,7 @@
   <body>
     <div id="app">
         <div class="container m-5 ">
-            <ul v-for="(email, i) in emailArray" class="list-unstyled">
+            <ul v-show="emailArray.length===10" v-for="(email, i) in emailArray" class="list-unstyled">
                 <li>{{i+1}} : {{email}}</li>
             </ul>
         </div>
